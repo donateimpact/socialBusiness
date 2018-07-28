@@ -1,0 +1,75 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');">
+  <div class="filter"></div>
+  <div class="container">
+
+            <div class="container">
+              <br/>
+              <br/>
+              <div>
+                <div class="col-lg-8 card col-md-8 col-sm-12 ml-auto mr-auto">
+                  <!--  <img class="card-img-top" src="..." alt="Card image cap"> -->
+                  <div class="card-body">
+                    <h5 class="card-title">Create your own project now</h5>
+                    <p class="card-text">Just enter some basic information about your project and start your project now!</p>
+                    <!--  <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <br>
+        
+                    <form class="register-form">
+        
+                      <div class="input-group form-group-no-border">
+                        <div class="container">
+                          <div class="row">
+                            <span class="input-group-addon">
+                              <i class="nc-icon nc-tag-content"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Project Name" name="projectName" [(ngModel)]="projectData.projectName">
+                          </div>
+        
+                          <div class="row">
+                            <span class="input-group-addon">
+                              <i class="nc-icon nc-tag-content"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Project Description" name="projectDescription" [(ngModel)]="projectData.projectDescription">
+                          </div>
+        
+        
+                          <div class="row">
+                            <span class="input-group-addon">
+                              <i class="nc-icon nc-tag-content"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Project Runtime" name="runtime" [(ngModel)]="projectData.runtime">
+                          </div>
+        
+        
+                          <div class="row">
+                            <span class="input-group-addon">
+                              <i class="nc-icon nc-tag-content"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Project MinFunding" name="minFunding" [(ngModel)]="projectData.minFunding">
+                          </div>
+        
+        
+                          <div class="row">
+                            <span class="input-group-addon">
+                              <i class="nc-icon nc-tag-content"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Project MaxFormat" name="maxFunding" [(ngModel)]="projectData.maxFunding">
+                          </div>
+        
+                          <button class="btn btn-danger btn-block btn-round" (click)="createProject()" >Create Project</button>
+        
+        
+                        </div>
+                      </div>
+                    </form>
+        
+        
+                  </div>
+                </div>
+        
+            </div>
+
+
+
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');">
+  <div class="filter"></div>
+
+    <div class="container">
+      <br/>
+      <br/>
+      <div>
+
+        <div class="row">
+
+          <div class="col-lg-5 card col-md-5 col-sm-12 ml-auto mr-auto" style="" *ngFor="let contract of contracts; index as i">
+              <!--  <img class="card-img-top" src="..." alt="Card image cap"> -->
+              <div class="card-body">
+                <h5 class="card-title">{{contract.projectName}}</h5>
+                <p class="card-text">{{contract.projectDescription}}</p>
+                <!--  <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <br>
+    
+    
+                <div class="typography-line">
+                  <span class="note">Project Runtime</span>
+                  <p class="text-primary">{{contract.runtime}}</p>
+                </div>
+    
+    
+                <div class="typography-line">
+                  <span class="note">Project MinFunding</span>
+                  <p class="text-primary">{{contract.minFunding}}</p>
+                </div>
+    
+                <div class="typography-line">
+                  <span class="note">Project MaxFunding</span>
+                  <p class="text-primary">{{contract.maxFunding}}</p>
+                </div>
+
+                <div class="typography-line">
+                  <span class="note">Project CurrentFunding</span>
+                  <p class="text-primary">{{contract.currentFund}}</p>
+                </div>
+    
+    
+                <div class="container">
+                  <div class="row">
+                    <input type="text" class="form-control col-md-4 ml-auto mr-auto" (keyup)="onKey($event, i)" placeholder="Amount">
+                    <button class="btn btn-danger btn-block btn-round col-md-6 ml-auto mr-auto" (click)="fund(i)" [disabled]="disable[i]" >{{warning[i]}}</button>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+
+      </div>
+
+      </div>
+
+  </div>
