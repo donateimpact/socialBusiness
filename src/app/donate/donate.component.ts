@@ -40,7 +40,7 @@ export class DonateComponent implements OnInit {
   this.disable = [];
 
   this.contractFunctionsService.getContracts().then(res => {
-
+console.log(res)
     for (let i = 0; i < res[0].length; i++) {
       this.contractFunctionsService.getContractData(i).then( (contractData) => {
 

@@ -25,6 +25,7 @@ export class CreateProjectComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log(this.contractFunctionsService.web3)
   }
 
 }

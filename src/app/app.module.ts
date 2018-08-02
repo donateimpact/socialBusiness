@@ -21,6 +21,7 @@ import { DetailsModule } from './details/details.module';
 
 import { ContractFunctionsService } from './services/contract-functions.service';
 import { Web3ConnectorService } from './services/web3-connector.service';
+import { MetamaskModule } from './metamask/metamask.module';
 
 
 
@@ -40,7 +41,7 @@ import { Web3ConnectorService } from './services/web3-connector.service';
     RouterModule,
     AppRoutingModule,
     HomeModule,
-
+    MetamaskModule,
     CreateProjectModule,
     DetailsModule,
     DonateModule,

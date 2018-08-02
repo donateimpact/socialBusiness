@@ -84,7 +84,7 @@ setContract() {
 
 
   constructor(public web3ConnectorService: Web3ConnectorService,) { 
-  this.web3 = this.web3ConnectorService.web3;
+  this.web3 = this.web3ConnectorService.checkAndInstantiateWeb3()
   console.log(this.web3.eth.accounts)
   this.setContract().then(console.log);
 }
