@@ -34,16 +34,10 @@
             <a routerLink="/donate" routerLinkActive="active" class="btn btn-outline-neutral btn-round">Create Impact</a>
             <br>
             <br>
-<<<<<<< HEAD
-            
-            <a target="_blank" href="../../assets/documents/DonateImpact_Whitepaper_DRAFT_published_20180728.pdf" class="btn btn-danger btn-round">Download our Whitepaper</a>
-               
-=======
 
             <a target="_blank" href="https://github.com/donateimpact/socialBusiness/blob/master/DonateImpact_Whitepaper_DRAFT_published_20180728.pdf"
                 class="btn btn-danger btn-round">Download our Whitepaper</a>
 
->>>>>>> c281a279d46a55a8c1de7a819ec82ee3cab7aad2
 
         </div>
 
@@ -386,7 +380,7 @@
                     <h2 class="text-center">Get in touch</h2>
                     
                     
-                    <form class="contact-form">
+                    <form (ngSubmit)="processForm()" class="contact-form">
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Name</label>
@@ -394,9 +388,10 @@
                                     <span class="input-group-addon">
                                         <i class="nc-icon nc-single-02"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <input name="eingabeName" type="text" class="form-control" placeholder="Name">
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <label>Email</label>
                                 <div class="input-group">

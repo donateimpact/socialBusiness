@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 
 export class LandingComponent implements OnInit {
 
+  eingabeName: string; 
+
   constructor() { }
 
   ngOnInit() {}
+
+
+  processForm(){
+    //this.eingabeName = "oh";
+    const allInfo = `hallo ${this.eingabeName}`;
+    alert(allInfo);
+  }
 
 }
