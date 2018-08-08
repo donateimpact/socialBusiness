@@ -22,6 +22,7 @@ import { DetailsModule } from './details/details.module';
 import { ContractFunctionsService } from './services/contract-functions.service';
 import { Web3ConnectorService } from './services/web3-connector.service';
 import { MetamaskModule } from './metamask/metamask.module';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 
@@ -33,6 +34,7 @@ import { MetamaskModule } from './metamask/metamask.module';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
+    ImpressumComponent,
   ],
   imports: [
     BrowserModule,

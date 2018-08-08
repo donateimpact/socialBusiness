@@ -12,6 +12,7 @@ import { DonateComponent } from './donate/donate.component';
 import { CreateProjectComponent } from './createproject/createproject.component';
 import { DetailsComponent } from './details/details.component';
 import { MetamaskComponent } from './metamask/metamask.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 const routes: Routes =[
@@ -24,6 +25,7 @@ const routes: Routes =[
     { path: 'create',           component: CreateProjectComponent },
     { path: 'details',          component: DetailsComponent },
     { path: 'metamask',         component: MetamaskComponent },
+    { path: 'impressum',        component: ImpressumComponent},
     { path: '', redirectTo: 'landing', pathMatch: 'full' }
 ];
 
